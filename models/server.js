@@ -11,7 +11,7 @@ class Server {
         
         // rutas de mi applicacion
         this.rutas = [
-        ['/api/default', '../routes/default.js'],
+        ['/api/ingredientes', '../routes/ingredientes.js'],
         ['/api/default2', '../routes/default2.js']
         ]
         this.routes(this.rutas);

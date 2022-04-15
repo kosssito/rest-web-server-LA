@@ -6,10 +6,13 @@ fetch(API_URL)
   
     let element = document.getElementById('app')
     const data1 = data.map(user => {
-     return `<li>${user.nombre}</li>
-     <li>${user.descripcion}</li>`
+     return `<div class="caja">
+     <p id="nombre">${user.nombre}</p>
+     <p id="descripcion">${user.descripcion}</p>
+     </div>`
     });
-    element.innerHTML = `${data1}`
+    element.innerHTML = data1
+   
 
 })
 .catch(err=>console.log(err))
